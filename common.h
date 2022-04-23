@@ -1,0 +1,11 @@
+#pragma once
+#include <iostream>
+#include <string>
+#include <map>
+#include <set>
+#include <list>
+#include <vector>
+#include <sstream>
+#include <locale>
+#include <iomanip>
+#include <filesystem>
