@@ -83,10 +83,39 @@ void myquote() {
 }
 void mytestpath()
 {
-	std::filesystem::path p = "c:/wo/ni/1.txt";
-	std::filesystem::path p2 = "d:/ni";
-	p.swap(p2);
-	std::cout << p << " " << p2;
+	
+
+	std::filesystem::path p = "c:\\wo\\ni\\1.txt";
+	std::filesystem::path::iterator k = p.begin();
+	for (; k != p.end(); k++) {
+		std::cout << *k << std::endl;
+	}
+
+	//std::cout << std::boolalpha << p.is_absolute();
+	//std::cout << std::boolalpha << p.empty();
+	//std::cout << "rname:" << p.root_name() << std::endl
+	//	<< "rdirectory:" << p.root_directory() << std::endl
+	//	<< "rpath:" << p.root_path() << std::endl
+	//	<< "rrelative:" << p.relative_path() << std::endl
+	//	<< "parentpath:" << p.parent_path() << std::endl
+	//	<< "filename:" << p.filename() << std::endl
+	//	<< "stem:" << p.stem() << std::endl
+	//	<< "extentsion:" << p.extension() << std::endl;
+	//    
+	//std::string rname = p.root_name().c_str();
+	//std::string rdriectory = p.root_directory().c_str();
+	//std::string rpath = p.root_path().c_str();
+	//std::cout << p;
+
+	//std::string str = p.string();
+	//std::wstring wstr = p.wstring();
+
+	//p.clear();
+	
+	//p.assign("k");
+	//std::filesystem::path p2 = "d:/ni";
+	//p.swap(p2);
+	//std::cout << p << " " << p2;
 	//std::cout << p.replace_extension("tt");
 	//std::cout << p.replace_filename( "2.txt" );
 	//std::cout << p.replace_filename( std::filesystem::path("2.txt"));
